@@ -1,0 +1,28 @@
+:root{--bg1:#1B1F3B;--bg2:#2B1E4A;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.12);--accent:#FFB347;--mint:#7CFFB2;--text:#fff;--muted:rgba(255,255,255,.72);color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:linear-gradient(var(--bg1),var(--bg2)) fixed;color:var(--text);line-height:1.6}
+a{color:var(--mint)}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header.site{display:flex;align-items:center;justify-content:space-between;padding:20px 24px}
+header.site .brand{font-weight:800;font-size:1.15rem;color:var(--text);text-decoration:none}
+header.site nav a{color:var(--muted);text-decoration:none;margin-left:20px}
+header.site nav a:hover{color:var(--text)}
+.hero{padding:72px 0 40px}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin:0 0 12px}
+.hero h1 span{color:var(--accent)}
+.hero p{color:var(--muted);max-width:620px;font-size:1.1rem;margin:0}
+h2{font-size:1.4rem;margin:48px 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:12px}
+.card .top{display:flex;gap:14px;align-items:center}
+.card img{width:64px;height:64px;border-radius:16px}
+.card h3{margin:0;font-size:1.15rem}
+.card .tag{font-size:.8rem;color:var(--muted)}
+.card p{margin:0;color:var(--muted)}
+.card .links{display:flex;gap:16px;flex-wrap:wrap;margin-top:auto;font-size:.95rem}
+.badge{display:inline-block;font-size:.75rem;padding:2px 10px;border-radius:999px;background:rgba(255,179,71,.15);color:var(--accent)}
+.doc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px 32px;margin:24px 0 48px}
+.doc h1{margin-top:0;font-size:1.9rem}
+.doc h2{font-size:1.15rem;margin:28px 0 8px}
+.doc p,.doc li{color:rgba(255,255,255,.88)}
+footer.site{border-top:1px solid var(--line);padding:24px 24px 40px;color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
